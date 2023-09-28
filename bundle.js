@@ -42,6 +42,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.loader {
     }
 }
 
+#just-subscribe.active{
+     min-height: 130px;
+     transition: height 1s;
+}
+
+#just-subscribe{
+    position: relative;   
+}
+
 #just-comments div div button i{
     font-size: 13px;
 }
@@ -104,7 +113,7 @@ color:red;
     padding: 5px;
     min-width: 100px;
     margin-right: 5px;
-}`, "",{"version":3,"sources":["webpack://./src/main.css"],"names":[],"mappings":"AAAA;IACI,WAAW;IACX,YAAY;IACZ,sBAAsB;IACtB,4BAA4B;IAC5B,kBAAkB;IAClB,qBAAqB;IACrB,sBAAsB;IACtB,sCAAsC;AAC1C;;AAEA;IACI;QACI,uBAAuB;IAC3B;;IAEA;QACI,yBAAyB;IAC7B;AACJ;;AAEA;IACI,eAAe;AACnB;;AAEA;AACA,mBAAmB;IACf,YAAY;AAChB;;AAEA;IACI,kBAAkB;IAClB,iBAAiB;;AAErB;;;;AAIA;IACI,kBAAkB;IAClB,QAAQ;IACR,SAAS;IACT,sBAAsB;IACtB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,wBAAwB;IACxB,YAAY;AAChB;;AAEA;AACA,SAAS;AACT;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,sBAAsB;IACtB,YAAY;IACZ,sBAAsB;IACtB,kBAAkB;IAClB,YAAY;IACZ,gBAAgB;AACpB;;AAEA;IACI,sBAAsB;IACtB,kBAAkB;IAClB,YAAY;IACZ,gBAAgB;IAChB,iBAAiB;AACrB","sourcesContent":[".loader {\n    width: 48px;\n    height: 48px;\n    border: 5px solid #FFF;\n    border-bottom-color: #FF3D00;\n    border-radius: 50%;\n    display: inline-block;\n    box-sizing: border-box;\n    animation: rotation 1s linear infinite;\n}\n\n@keyframes rotation {\n    0% {\n        transform: rotate(0deg);\n    }\n\n    100% {\n        transform: rotate(360deg);\n    }\n}\n\n#just-comments div div button i{\n    font-size: 13px;\n}\n\n#just-comments div div button{\nline-height: normal;\n    height: 17px;\n}\n\n#just-comments {\n    position: relative;\n    min-height: 120px;\n    \n}\n\n\n\n.overlay {\n    position: absolute;\n    top: 0px;\n    left: 0px;\n    background-color: #fff;\n    width: 100%;\n    height: 100%;\n}\n\n#subscribe.error{\n    border:#FF3D00 1px solid;\n    padding: 5px;\n}\n\n.errorMessage{\ncolor:red;\n}\n\n.errorMessage span{\n    margin-left:20px;\n}\n\n.successMessage{\n    color:green;\n}\n\n.successMessage span{\n    margin-left:20px;\n}\n\n.writeButton{\n    background-color: navy;\n    color: white;\n    border: 1px solid gray;\n    border-radius: 5px;\n    padding: 5px;\n    min-width: 100px;\n}\n\n#subscribe{\n    border: 1px solid gray;\n    border-radius: 5px;\n    padding: 5px;\n    min-width: 100px;\n    margin-right: 5px;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/main.css"],"names":[],"mappings":"AAAA;IACI,WAAW;IACX,YAAY;IACZ,sBAAsB;IACtB,4BAA4B;IAC5B,kBAAkB;IAClB,qBAAqB;IACrB,sBAAsB;IACtB,sCAAsC;AAC1C;;AAEA;IACI;QACI,uBAAuB;IAC3B;;IAEA;QACI,yBAAyB;IAC7B;AACJ;;AAEA;KACK,iBAAiB;KACjB,qBAAqB;AAC1B;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,eAAe;AACnB;;AAEA;AACA,mBAAmB;IACf,YAAY;AAChB;;AAEA;IACI,kBAAkB;IAClB,iBAAiB;;AAErB;;;;AAIA;IACI,kBAAkB;IAClB,QAAQ;IACR,SAAS;IACT,sBAAsB;IACtB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,wBAAwB;IACxB,YAAY;AAChB;;AAEA;AACA,SAAS;AACT;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,sBAAsB;IACtB,YAAY;IACZ,sBAAsB;IACtB,kBAAkB;IAClB,YAAY;IACZ,gBAAgB;AACpB;;AAEA;IACI,sBAAsB;IACtB,kBAAkB;IAClB,YAAY;IACZ,gBAAgB;IAChB,iBAAiB;AACrB","sourcesContent":[".loader {\n    width: 48px;\n    height: 48px;\n    border: 5px solid #FFF;\n    border-bottom-color: #FF3D00;\n    border-radius: 50%;\n    display: inline-block;\n    box-sizing: border-box;\n    animation: rotation 1s linear infinite;\n}\n\n@keyframes rotation {\n    0% {\n        transform: rotate(0deg);\n    }\n\n    100% {\n        transform: rotate(360deg);\n    }\n}\n\n#just-subscribe.active{\n     min-height: 130px;\n     transition: height 1s;\n}\n\n#just-subscribe{\n    position: relative;   \n}\n\n#just-comments div div button i{\n    font-size: 13px;\n}\n\n#just-comments div div button{\nline-height: normal;\n    height: 17px;\n}\n\n#just-comments {\n    position: relative;\n    min-height: 120px;\n    \n}\n\n\n\n.overlay {\n    position: absolute;\n    top: 0px;\n    left: 0px;\n    background-color: #fff;\n    width: 100%;\n    height: 100%;\n}\n\n#subscribe.error{\n    border:#FF3D00 1px solid;\n    padding: 5px;\n}\n\n.errorMessage{\ncolor:red;\n}\n\n.errorMessage span{\n    margin-left:20px;\n}\n\n.successMessage{\n    color:green;\n}\n\n.successMessage span{\n    margin-left:20px;\n}\n\n.writeButton{\n    background-color: navy;\n    color: white;\n    border: 1px solid gray;\n    border-radius: 5px;\n    padding: 5px;\n    min-width: 100px;\n}\n\n#subscribe{\n    border: 1px solid gray;\n    border-radius: 5px;\n    padding: 5px;\n    min-width: 100px;\n    margin-right: 5px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -649,6 +658,7 @@ const subscribeClick = (e) => {
     [(0,_framework__WEBPACK_IMPORTED_MODULE_0__.span)({ class: "loader" }, [])]
   );
   rootElement.appendChild(over);
+  rootElement.classList.add("active")
 
   const overlay = (0,_framework__WEBPACK_IMPORTED_MODULE_0__.findOne)(rootElement, ".overlay");
   overlay.textContent = "";
